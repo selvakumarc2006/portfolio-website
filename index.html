@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selvakumar C | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">&lt;Selvakumar /&gt;</a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#github">GitHub</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-particles" id="particles"></div>
+        <div class="hero-content">
+            <p class="hero-greeting">Hello, I'm</p>
+            <h1 class="hero-name">Selvakumar <span class="accent">C</span></h1>
+            <div class="hero-title-wrapper">
+                <span class="hero-title" id="typewriter"></span>
+                <span class="cursor">|</span>
+            </div>
+            <p class="hero-tagline">Passionate about building intelligent embedded systems, IoT solutions, and exploring the intersection of hardware and AI.</p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                <a href="#" class="btn btn-secondary" id="downloadResume">
+                    <i class="fas fa-download"></i> Download Resume
+                </a>
+            </div>
+            <div class="hero-socials">
+                <a href="https://github.com/selvakumarc2006" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/selvakumar06/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="mailto:selvakumarc2005@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <p>Scroll Down</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about" id="about">
+        <div class="container">
+            <h2 class="section-title">About <span class="accent">Me</span></h2>
+            <div class="section-line"></div>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p class="about-intro">
+                        I'm <strong>Selvakumar C</strong>, an Electronics and Communication Engineering student at 
+                        <strong>Kongu Engineering College</strong> with a CGPA of <strong>8.19</strong>. I have a deep passion 
+                        for <span class="accent">Embedded Systems</span>, <span class="accent">IoT</span>, and 
+                        <span class="accent">firmware development</span>.
+                    </p>
+                    <p>
+                        With hands-on experience in bare-metal programming on ARM Cortex-M3 microcontrollers and 
+                        ESP32-based IoT projects, I love bridging the gap between hardware and software. I'm constantly 
+                        exploring new technologies in robotics, AI, and real-time systems to build impactful solutions.
+                    </p>
+                    <p>
+                        I was trained at <strong>Sense Semiconductor and IT Solutions</strong> on the LPC1768 (ARM Cortex-M3) 
+                        microcontroller, gaining experience in timers, interrupts, and peripheral interfacing (GPIO, UART, SPI), 
+                        including SD Card and RFID interfacing projects.
+                    </p>
+                    <div class="about-details">
+                        <div class="detail-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <div>
+                                <strong>Education</strong>
+                                <p>B.E in ECE — Kongu Engineering College</p>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <strong>Location</strong>
+                                <p>Dindigul, Tamil Nadu</p>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-trophy"></i>
+                            <div>
+                                <strong>Award</strong>
+                                <p>3rd Prize — Automatic Sorting System (ISF Congress)</p>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-certificate"></i>
+                            <div>
+                                <strong>Certification</strong>
+                                <p>Bare Metal Programming — SSIT</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-interests">
+                    <h3>Areas of Interest</h3>
+                    <div class="interest-tags">
+                        <span class="tag"><i class="fas fa-microchip"></i> Embedded Systems</span>
+                        <span class="tag"><i class="fas fa-wifi"></i> Internet of Things</span>
+                        <span class="tag"><i class="fas fa-robot"></i> Robotics</span>
+                        <span class="tag"><i class="fas fa-brain"></i> Artificial Intelligence</span>
+                        <span class="tag"><i class="fas fa-code"></i> Firmware Development</span>
+                        <span class="tag"><i class="fas fa-cogs"></i> Hardware-Software Integration</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section skills" id="skills">
+        <div class="container">
+            <h2 class="section-title">My <span class="accent">Skills</span></h2>
+            <div class="section-line"></div>
+            <div class="skills-grid">
+                <div class="skill-card" data-aos="fade-up">
+                    <div class="skill-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>C Programming</h3>
+                    <p>Strong foundation in C for embedded and system-level programming, memory management, and data structures.</p>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="90"></div>
+                    </div>
+                </div>
+                <div class="skill-card" data-aos="fade-up">
+                    <div class="skill-icon">
+                        <i class="fas fa-memory"></i>
+                    </div>
+                    <h3>Bare Metal Programming</h3>
+                    <p>Hands-on experience with register-level programming on ARM Cortex-M3, GPIO, UART, SPI, timers, and interrupts.</p>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="85"></div>
+                    </div>
+                </div>
+                <div class="skill-card" data-aos="fade-up">
+                    <div class="skill-icon">
+                        <i class="fas fa-microchip"></i>
+                    </div>
+                    <h3>Embedded Systems</h3>
+                    <p>Design and development of embedded solutions with microcontrollers, peripheral interfacing, and firmware development.</p>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="88"></div>
+                    </div>
+                </div>
+                <div class="skill-card" data-aos="fade-up">
+                    <div class="skill-icon">
+                        <i class="fab fa-python"></i>
+                    </div>
+                    <h3>Python</h3>
+                    <p>Scripting, automation, data analysis, and rapid prototyping for IoT and AI applications.</p>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="80"></div>
+                    </div>
+                </div>
+                <div class="skill-card" data-aos="fade-up">
+                    <div class="skill-icon">
+                        <i class="fas fa-tasks"></i>
+                    </div>
+                    <h3>FreeRTOS</h3>
+                    <p>Real-time task scheduling, inter-task communication, and multitasking on resource-constrained embedded devices.</p>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="75"></div>
+                    </div>
+                </div>
+                <div class="skill-card" data-aos="fade-up">
+                    <div class="skill-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3>Raspberry Pi</h3>
+                    <p>Linux-based embedded computing, GPIO interfacing, networking, and edge AI deployments.</p>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="78"></div>
+                    </div>
+                </div>
+                <div class="skill-card" data-aos="fade-up">
+                    <div class="skill-icon">
+                        <i class="fas fa-wifi"></i>
+                    </div>
+                    <h3>ESP32</h3>
+                    <p>Wi-Fi/Bluetooth-enabled IoT projects, sensor integration, cloud connectivity, and real-time monitoring systems.</p>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="88"></div>
+                    </div>
+                </div>
+                <div class="skill-card" data-aos="fade-up">
+                    <div class="skill-icon">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h3>OpenCV</h3>
+                    <p>Computer vision for object detection, image processing, and real-time video analytics on embedded platforms.</p>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="72"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section projects" id="projects">
+        <div class="container">
+            <h2 class="section-title">My <span class="accent">Projects</span></h2>
+            <div class="section-line"></div>
+            <div class="projects-grid">
+                <div class="project-card" data-aos="fade-up">
+                    <div class="project-header">
+                        <div class="project-icon"><i class="fas fa-temperature-low"></i></div>
+                        <div class="project-links">
+                            <a href="https://github.com/selvakumarc2006" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <h3>Smart Cold Chain Monitoring System</h3>
+                    <p>Developed a real-time IoT-based temperature and humidity monitoring system for perishable goods using ESP32. Features Wi-Fi-based cloud monitoring, a remote dashboard, and an automated alert system to prevent product spoilage.</p>
+                    <div class="project-tags">
+                        <span>ESP32</span>
+                        <span>IoT</span>
+                        <span>Cloud</span>
+                        <span>Sensors</span>
+                    </div>
+                </div>
+                <div class="project-card" data-aos="fade-up">
+                    <div class="project-header">
+                        <div class="project-icon"><i class="fas fa-user-shield"></i></div>
+                        <div class="project-links">
+                            <a href="https://github.com/selvakumarc2006" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <h3>Unauthorized Human Detection in Farm</h3>
+                    <p>Built a real-time human detection system using ESP32-CAM with an object detection model for identifying human presence in video streams. Integrated Wi-Fi communication for remote monitoring and alert notifications for farm security.</p>
+                    <div class="project-tags">
+                        <span>ESP32-CAM</span>
+                        <span>OpenCV</span>
+                        <span>AI</span>
+                        <span>Security</span>
+                    </div>
+                </div>
+                <div class="project-card" data-aos="fade-up">
+                    <div class="project-header">
+                        <div class="project-icon"><i class="fas fa-bus"></i></div>
+                        <div class="project-links">
+                            <a href="https://github.com/selvakumarc2006" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <h3>Bus Tracking System Using GPS</h3>
+                    <p>Designed a real-time GPS-based bus tracking system that provides live location updates for public transport. Built with embedded GPS modules and wireless communication for accurate route monitoring.</p>
+                    <div class="project-tags">
+                        <span>GPS</span>
+                        <span>IoT</span>
+                        <span>Embedded</span>
+                        <span>Tracking</span>
+                    </div>
+                </div>
+                <div class="project-card" data-aos="fade-up">
+                    <div class="project-header">
+                        <div class="project-icon"><i class="fas fa-parking"></i></div>
+                        <div class="project-links">
+                            <a href="https://github.com/selvakumarc2006" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <h3>Smart Parking System</h3>
+                    <p>Implemented an intelligent parking solution using sensors and microcontrollers to detect available slots in real time. Features automated slot allocation and a display system for efficient parking management.</p>
+                    <div class="project-tags">
+                        <span>Sensors</span>
+                        <span>Microcontroller</span>
+                        <span>IoT</span>
+                        <span>Automation</span>
+                    </div>
+                </div>
+                <div class="project-card" data-aos="fade-up">
+                    <div class="project-header">
+                        <div class="project-icon"><i class="fas fa-traffic-light"></i></div>
+                        <div class="project-links">
+                            <a href="https://github.com/selvakumarc2006" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <h3>Smart Traffic Light Control</h3>
+                    <p>Developed a density and priority-based smart traffic light control system that dynamically adjusts signal timings based on real-time traffic density and emergency vehicle priority for optimized flow.</p>
+                    <div class="project-tags">
+                        <span>Embedded</span>
+                        <span>Sensors</span>
+                        <span>Algorithm</span>
+                        <span>Real-time</span>
+                    </div>
+                </div>
+                <div class="project-card" data-aos="fade-up">
+                    <div class="project-header">
+                        <div class="project-icon"><i class="fas fa-wine-bottle"></i></div>
+                        <div class="project-links">
+                            <a href="https://github.com/selvakumarc2006" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <h3>Alcohol Monitoring System</h3>
+                    <p>Designed an alcohol detection system using MQ3 sensor and LM339N comparator. Integrated buzzer and LED indicators for safety applications with real-time analog signal processing.</p>
+                    <div class="project-tags">
+                        <span>MQ3 Sensor</span>
+                        <span>LM339N</span>
+                        <span>Analog</span>
+                        <span>Safety</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GitHub Section -->
+    <section class="section github-section" id="github">
+        <div class="container">
+            <div class="github-content">
+                <div class="github-icon">
+                    <i class="fab fa-github"></i>
+                </div>
+                <h2>Check Out My <span class="accent">GitHub</span></h2>
+                <p>Explore my repositories, open-source contributions, and project source code. I regularly push my embedded systems, IoT, and AI projects to GitHub.</p>
+                <a href="https://github.com/selvakumarc2006" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-large">
+                    <i class="fab fa-github"></i> View GitHub Profile
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">Get In <span class="accent">Touch</span></h2>
+            <div class="section-line"></div>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <p class="contact-description">I'm always open to discussing new projects, opportunities, and collaborations in embedded systems, IoT, and AI. Feel free to reach out!</p>
+                    <div class="contact-items">
+                        <a href="mailto:selvakumarc2005@gmail.com" class="contact-item">
+                            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                            <div>
+                                <strong>Email</strong>
+                                <p>selvakumarc2005@gmail.com</p>
+                            </div>
+                        </a>
+                        <a href="https://www.linkedin.com/in/selvakumar06/" target="_blank" rel="noopener noreferrer" class="contact-item">
+                            <div class="contact-icon"><i class="fab fa-linkedin-in"></i></div>
+                            <div>
+                                <strong>LinkedIn</strong>
+                                <p>linkedin.com/in/selvakumar06</p>
+                            </div>
+                        </a>
+                        <a href="https://github.com/selvakumarc2006" target="_blank" rel="noopener noreferrer" class="contact-item">
+                            <div class="contact-icon"><i class="fab fa-github"></i></div>
+                            <div>
+                                <strong>GitHub</strong>
+                                <p>github.com/selvakumarc2006</p>
+                            </div>
+                        </a>
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fas fa-phone"></i></div>
+                            <div>
+                                <strong>Phone</strong>
+                                <p>+91 9361616498</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder=" " required>
+                            <label for="name">Your Name</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder=" " required>
+                            <label for="email">Your Email</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" placeholder=" " required>
+                            <label for="subject">Subject</label>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="5" placeholder=" " required></textarea>
+                            <label for="message">Your Message</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <a href="#hero" class="footer-logo">&lt;Selvakumar /&gt;</a>
+                <div class="footer-links">
+                    <a href="#about">About</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-socials">
+                    <a href="https://github.com/selvakumarc2006" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/selvakumar06/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="mailto:selvakumarc2005@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Selvakumar | Portfolio</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
